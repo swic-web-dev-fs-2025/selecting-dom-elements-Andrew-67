@@ -21,3 +21,10 @@ cards.forEach((card, index) => {
 const productChange = document.querySelector('[data-product-id="2"] .price');
 productChange.textContent = "$24.99";
 console.log(`Updated price for product 2: ${productChange.textContent}`);
+
+const nullButton = document.querySelector(".missing-button");
+if (nullButton) {
+  nullButton.addEventListener("click", handleClick);
+} else {
+  console.log("Button with class 'missing-button' does not exist.");
+}
