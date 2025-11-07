@@ -28,3 +28,6 @@ if (nullButton) {
 } else {
   console.log("Button with class 'missing-button' does not exist.");
 }
+// const title = document.querySelector("main .card .card-title");
+// Refractored
+// const title = document.querySelector("[data-card-title]");
